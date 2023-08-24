@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        docker {
-            filename 'Dockerfile'
-            label 'zip-job-docker'
+           label 'zip-job-docker'
             additionalBuildArgs '--privileged' 
         }
     }
